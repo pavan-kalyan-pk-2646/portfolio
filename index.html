@@ -292,6 +292,8 @@
     display:flex; flex-wrap:wrap; margin: 6px 0 4px;
   }
   .kinetic-name .word{ display:inline-flex; margin-right: 0.28em; white-space:nowrap; }
+  .kinetic-name .name-line{ display:flex; flex-wrap:nowrap; width:100%; }
+  .kinetic-name .name-line + .name-line{ margin-top:0.06em; }
   .kinetic-name .letter{
     display:inline-block; opacity:0; transform: translateY(60px) rotateX(-50deg); filter: blur(6px);
   }
@@ -2080,11 +2082,13 @@ nav ul a{ font-size: 15px !important; }
 }
 .btn-ghost{
   color: var(--ink) !important;
+  box-shadow: 0 0 0 1px rgba(145,230,200,.05), 0 10px 30px -22px rgba(145,230,200,.55) !important;
 }
 .btn-ghost:hover{
   color: var(--mint-bright) !important;
   border-color: var(--mint-bright) !important;
   background: linear-gradient(160deg, rgba(145,230,200,.16), rgba(255,255,255,.03)) !important;
+  box-shadow: 0 0 22px rgba(145,230,200,.14), 0 18px 40px -22px rgba(145,230,200,.65) !important;
 }
 
 /* Repo / resume buttons pick up the same glow language */
@@ -2149,7 +2153,7 @@ nav ul a{ font-size: 15px !important; }
 
           <p class="sub">Software Engineering student and 2027 graduate skilled in Java, Python, C++, DSA, OOP, and AI/ML. Experienced in building full-stack applications using React, FastAPI, Flask, REST APIs, RAG, and multi-agent architectures.</p>
 
-          <div class="status-badge"><span class="status-dot"></span>Open to Software Engineering · Full-Stack · AI/ML Roles</div>
+          <div class="status-badge"><span class="status-dot"></span>Software Engineering · Full-Stack · AI/ML</div>
 
           <div class="hero-badges">
             <span class="hero-badge"><b>CAD</b> Certified</span>
@@ -2161,8 +2165,10 @@ nav ul a{ font-size: 15px !important; }
           <div class="hero-cta">
             <a href="#work" class="btn btn-primary magnetic">Explore Projects →</a>
             <a href="https://github.com/pavan-kalyan-pk-2646" target="_blank" rel="noopener" class="btn btn-ghost magnetic"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
+            <a href="https://linkedin.com/in/bv-pavan-kalyan-72a04839a" target="_blank" rel="noopener" class="btn btn-ghost magnetic">LinkedIn ↗</a>
+           
             <a href="mailto:venkatapavankalyanb@gmail.com" class="btn btn-ghost magnetic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Get in touch</a>
-            <a href="pk_resume.pdf" download="Burra_Venkata_Pavan_Kalyan_Resume.pdf" class="btn btn-ghost magnetic resume-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 19h16"/></svg>Download Resume</a>
+            <a href="bvpavankalyan_resume.pdf" download="Burra_Venkata_Pavan_Kalyan_Resume.pdf" class="btn btn-ghost magnetic resume-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 19h16"/></svg>Download Resume</a>
           </div>
 
           <div class="hero-stats">
@@ -2255,7 +2261,7 @@ nav ul a{ font-size: 15px !important; }
     <div class="wrap">
       <div class="section-head reveal"><div><span class="section-tag">What I build</span><h2>From idea to interface</h2><p class="section-lead">I enjoy turning complex ideas into practical software — from AI agents and ML pipelines to polished full-stack products and ServiceNow applications.</p></div></div>
       <div class="build-grid">
-        <article class="build-card reveal"><div class="build-icon">01</div><h3>AI & Intelligent Systems</h3><p>RAG workflows, multi-agent architectures, applied machine learning and data-driven decision systems.</p><div class="mini-tags"><span>RAG</span><span>LangGraph</span><span>ML</span><span>Agents</span></div></article>
+        <article class="build-card reveal"><div class="build-icon">01</div><h3>AI & Intelligent Systems</h3><p>RAG workflows, multi-agent architectures, applied machine learning and data-driven decision systems.</p><div class="mini-tags"><span>Scikit-learn</span><span>TF-IDF</span><span>RAG</span><span>Multi-Agent Systems</span></div></article>
         <article class="build-card reveal"><div class="build-icon">02</div><h3>Full-Stack Products</h3><p>Responsive interfaces, REST APIs, authentication, databases and backend services connected into complete products.</p><div class="mini-tags"><span>React</span><span>FastAPI</span><span>Flask</span><span>SQL</span></div></article>
         <article class="build-card reveal"><div class="build-icon">03</div><h3>ServiceNow Development</h3><p>Application development and platform work backed by ServiceNow Certified Application Developer and System Administrator credentials.</p><div class="mini-tags"><span>CAD</span><span>CSA</span><span>ServiceNow</span></div></article>
         <article class="build-card reveal"><div class="build-icon">04</div><h3>Engineering & Developer Tooling</h3><p>Reliable development workflows with Git, GitHub, Docker, Jenkins, REST APIs, SQL and practical automation for building and shipping software.</p><div class="mini-tags"><span>Git</span><span>Docker</span><span>Jenkins</span><span>REST</span><span>SQL</span></div></article>
@@ -2287,110 +2293,81 @@ nav ul a{ font-size: 15px !important; }
               <div><span class="project-index">01 / AI PRODUCT</span><h3>JOBDETECT</h3><p>AI-Based Job Classification & Fraud Detection</p></div>
               <span class="project-state"><i></i> Built</span>
             </div>
-            <p class="project-summary">Full-stack recruitment intelligence platform classifying 10,000+ job postings with approximately 92% accuracy and detecting fraudulent listings using machine learning.</p>
+            <p class="project-summary">Full-stack AI recruitment platform that classifies job postings into 12 categories, detects fraudulent listings, tracks prediction history, and provides analytics through a React dashboard.</p>
             <div class="project-details">
-              <div><span>MODEL</span><b>TF-IDF + Logistic Regression</b></div>
-              <div><span>FRONTEND</span><b>React</b></div>
-              <div><span>API</span><b>FastAPI + JWT</b></div>
-              <div><span>DATA</span><b>SQLite</b></div>
+              <div><span>FRONTEND</span><b>React · Vite · Tailwind CSS</b></div>
+              <div><span>BACKEND</span><b>Python · FastAPI · REST API</b></div>
+              <div><span>AI / ML</span><b>Scikit-learn · TF-IDF · Logistic Regression</b></div>
+              <div><span>DATABASE / INFRA</span><b>SQLite · SQLAlchemy · Docker · Nginx</b></div>
             </div>
             <div class="project-tech">
-              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/react" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"></i>React</span>
-              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/fastapi" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"></i>FastAPI</span>
-              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/scikitlearn" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"></i>Scikit-learn</span>
-              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/sqlite" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"></i>SQLite</span>
-              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/jsonwebtokens/ffffff" alt="" loading="lazy"></i>JWT</span>
+              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/python" alt="" loading="lazy"></i>Python</span>
+              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/react" alt="" loading="lazy"></i>React</span>
+              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/fastapi" alt="" loading="lazy"></i>FastAPI</span>
+              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/scikitlearn" alt="" loading="lazy"></i>Scikit-learn</span>
+              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/sqlite" alt="" loading="lazy"></i>SQLite</span>
+              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/docker" alt="" loading="lazy"></i>Docker</span>
             </div>
             <div class="project-workflow">
-              <span class="wf-label">Impact</span>
-              <span class="wf-step">10,000+ Postings</span><i class="wf-arrow">→</i>
-              <span class="wf-step">~92% Accuracy</span><i class="wf-arrow">→</i>
-              <span class="wf-step">85%+ Fraud Detection</span><i class="wf-arrow">→</i>
-              <span class="wf-step">~30% Accuracy Improvement</span>
+              <span class="wf-label">Impact</span><span class="wf-step">10,000+ Postings</span><i class="wf-arrow">→</i><span class="wf-step">~92% Accuracy</span><i class="wf-arrow">→</i><span class="wf-step">85%+ Fraud Detection</span><i class="wf-arrow">→</i><span class="wf-step">~30% Accuracy Improvement</span>
             </div>
-            <a class="repo-button" href="https://github.com/pavan-kalyan-pk-2646/JOBDETECT.git" target="_blank" rel="noopener">
-              <span class="repo-icon">GH</span><span><small>OPEN SOURCE</small>View GitHub Repository</span><b>↗</b>
-            </a>
+            <a class="repo-button" href="https://github.com/pavan-kalyan-pk-2646/JOBDETECT.git" target="_blank" rel="noopener"><span class="repo-icon">GH</span><span><small>OPEN SOURCE</small>View GitHub Repository</span><b>↗</b></a>
           </div>
         </article>
 
         <article class="project-panel reveal">
           <div class="project-visual climate-visual">
-            <div class="climate-grid"></div>
-            <div class="visual-nameplate climate"><span>AI Platform</span><b>Climate Mirror</b></div>
-            <span class="visual-label">AI · CLIMATE</span>
+            <div class="climate-grid"></div><div class="visual-nameplate climate"><span>AI Platform</span><b>Climate Mirror</b></div><span class="visual-label">AI · CLIMATE</span>
           </div>
           <div class="project-body">
-            <div class="project-heading">
-              <div><span class="project-index">02 / AI PLATFORM</span><h3>Climate Mirror</h3><p>Agentic AI Climate Intelligence Platform</p></div>
-              <span class="project-state"><i></i> Built</span>
-            </div>
-            <p class="project-summary">Agentic AI platform built with Python and Flask for personalized climate-risk assessments and actionable environmental insights.</p>
+            <div class="project-heading"><div><span class="project-index">02 / AI PLATFORM</span><h3>Climate Mirror</h3><p>Agentic AI Climate Intelligence Platform</p></div><span class="project-state"><i></i> Built</span></div>
+            <p class="project-summary">Agentic climate intelligence platform that analyses personal and national climate inputs and generates risk scores, action plans, disaster assessments, policy recommendations, personalised narratives, and trend projections.</p>
             <div class="project-details">
-              <div><span>APP LAYER</span><b>Flask</b></div>
-              <div><span>DATA ACCESS</span><b>SQLAlchemy</b></div>
-              <div><span>ARCHITECTURE</span><b>Multi-Agent AI</b></div>
-              <div><span>API</span><b>REST APIs</b></div>
+              <div><span>FRONTEND / UI</span><b>HTML · CSS · JavaScript · Jinja2</b></div>
+              <div><span>BACKEND</span><b>Python · Flask</b></div>
+              <div><span>AI / ARCHITECTURE</span><b>Multi-Agent Python · Climate Analytics · Linear Regression</b></div>
+              <div><span>DATABASE / SECURITY</span><b>SQLAlchemy · SQLite · CSRF · Input Validation</b></div>
             </div>
             <div class="project-tech">
-              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/flask" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"></i>Flask</span>
-              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/sqlalchemy" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"></i>SQLAlchemy</span>
-              <span class="tech-chip"><i class="tech-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/><path d="M12 8v8M8 12h8"/></svg></i>Multi-Agent AI</span>
-              <span class="tech-chip"><i class="tech-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h8M5 12h14M5 17h10"/><circle cx="17" cy="7" r="2"/></svg></i>REST APIs</span>
+              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/python" alt="" loading="lazy"></i>Python</span>
+              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/flask" alt="" loading="lazy"></i>Flask</span>
+              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/sqlalchemy" alt="" loading="lazy"></i>SQLAlchemy</span>
+              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/sqlite" alt="" loading="lazy"></i>SQLite</span>
+              <span class="tech-chip"><i class="tech-logo"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="M12 8v8M8 12h8"/></svg></i>Multi-Agent AI</span>
+              <span class="tech-chip"><i class="tech-logo"><svg viewBox="0 0 24 24"><path d="M5 5h14v14H5zM8 9h8M8 13h8"/></svg></i>FPDF2</span>
             </div>
-            <div class="project-workflow climate">
-              <span class="wf-label">Workflow</span>
-              <span class="wf-step">Climate Analysis</span><i class="wf-arrow">→</i>
-              <span class="wf-step">Risk Prediction</span><i class="wf-arrow">→</i>
-              <span class="wf-step">Advisory Generation</span><i class="wf-arrow">→</i>
-              <span class="wf-step">Trend Forecasting</span>
-            </div>
-            <a class="repo-button" href="https://github.com/pavan-kalyan-pk-2646/the-climate-mirror.git" target="_blank" rel="noopener">
-              <span class="repo-icon">GH</span><span><small>OPEN SOURCE</small>View GitHub Repository</span><b>↗</b>
-            </a>
+            <div class="project-workflow climate"><span class="wf-label">Workflow</span><span class="wf-step">Climate Analysis</span><i class="wf-arrow">→</i><span class="wf-step">Risk Assessment</span><i class="wf-arrow">→</i><span class="wf-step">Action & Policy Advice</span><i class="wf-arrow">→</i><span class="wf-step">2050 Narrative / Forecast</span></div>
+            <a class="repo-button" href="https://github.com/pavan-kalyan-pk-2646/the-climate-mirror.git" target="_blank" rel="noopener"><span class="repo-icon">GH</span><span><small>OPEN SOURCE</small>View GitHub Repository</span><b>↗</b></a>
           </div>
         </article>
 
         <article class="project-panel reveal">
-          <div class="project-visual job-visual">
-            <div class="job-visual-frame">
-              <div class="visual-bars"><i></i><i></i><i></i><i></i><i></i></div>
-              <div class="visual-nameplate job"><span>AI Finance</span><b>Capital Compass AI</b></div>
-            </div>
-            <span class="visual-label">AI · FINANCE · RAG</span>
-          </div>
+          <div class="project-visual job-visual"><div class="job-visual-frame"><div class="visual-bars"><i></i><i></i><i></i><i></i><i></i></div><div class="visual-nameplate job"><span>AI Finance</span><b>Capital Compass AI</b></div></div><span class="visual-label">AI · FINANCE · RAG</span></div>
           <div class="project-body">
-            <div class="project-heading">
-              <div><span class="project-index">03 / AI FINANCE</span><h3>Capital Compass AI</h3><p>Multi-Agent Financial Advisory System</p></div>
-              <span class="project-state"><i></i> Built</span>
-            </div>
-            <p class="project-summary">Multi-agent AI financial advisory platform using RAG to generate personalized portfolio recommendations and support quantitative risk assessment.</p>
+            <div class="project-heading"><div><span class="project-index">03 / AI FINANCE</span><h3>Capital Compass AI</h3><p>Multi-Agent Financial Advisory System</p></div><span class="project-state"><i></i> Built</span></div>
+            <p class="project-summary">Multi-agent financial portfolio system that combines LangGraph, LangChain and Ollama for portfolio recommendations, risk analysis, Monte Carlo stress testing, RAG-based compliance validation, and plain-language explanations.</p>
             <div class="project-details">
-              <div><span>CORE ENGINE</span><b>Multi-Agent + RAG</b></div>
-              <div><span>BACKEND</span><b>Flask REST APIs</b></div>
-              <div><span>DATA</span><b>SQLite</b></div>
-              <div><span>ANALYTICS</span><b>NumPy + Pandas</b></div>
+              <div><span>FRONTEND / UI</span><b>HTML · CSS · JavaScript</b></div>
+              <div><span>BACKEND / API</span><b>Python · Flask · REST API · SSE</b></div>
+              <div><span>AI / AGENTS</span><b>LangGraph · LangChain · Ollama · RAG · ChromaDB</b></div>
+              <div><span>DATA / FINANCE</span><b>NumPy · Pandas · yfinance · Monte Carlo</b></div>
+              <div><span>STORAGE / AUTOMATION</span><b>SQLite · APScheduler</b></div>
             </div>
             <div class="project-tech">
-              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/flask" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"></i>Flask</span>
-              <span class="tech-chip"><i class="tech-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h8M5 12h14M5 17h10"/><circle cx="17" cy="7" r="2"/></svg></i>RAG</span>
-              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/sqlite" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"></i>SQLite</span>
+              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/python" alt="" loading="lazy"></i>Python</span>
+              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/flask" alt="" loading="lazy"></i>Flask</span>
+              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/langchain" alt="" loading="lazy"></i>LangChain</span>
+              <span class="tech-chip"><i class="tech-logo"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="M12 8v8M8 12h8"/></svg></i>LangGraph</span>
+              <span class="tech-chip"><i class="tech-logo"><svg viewBox="0 0 24 24"><path d="M5 7h8M5 12h14M5 17h10"/><circle cx="17" cy="7" r="2"/></svg></i>RAG</span>
+              <span class="tech-chip"><i class="tech-logo"><svg viewBox="0 0 24 24"><path d="M5 5h14v14H5zM8 9h8M8 13h5"/></svg></i>Ollama</span>
               <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/numpy/4dabcf" alt="" loading="lazy"></i>NumPy</span>
               <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/pandas/e70488" alt="" loading="lazy"></i>Pandas</span>
+              <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/sqlite" alt="" loading="lazy"></i>SQLite</span>
             </div>
-            <div class="project-workflow">
-              <span class="wf-label">Impact</span>
-              <span class="wf-step">RAG Recommendations</span><i class="wf-arrow">→</i>
-              <span class="wf-step">1,000+ Monte Carlo Simulations</span><i class="wf-arrow">→</i>
-              <span class="wf-step">Portfolio Optimization</span><i class="wf-arrow">→</i>
-              <span class="wf-step">~30% Faster Response</span>
-            </div>
-            <a class="repo-button" href="https://github.com/pavan-kalyan-pk-2646/capital_compass_ai.git" target="_blank" rel="noopener">
-              <span class="repo-icon">GH</span><span><small>OPEN SOURCE</small>View GitHub Repository</span><b>↗</b>
-            </a>
+            <div class="project-workflow"><span class="wf-label">Workflow</span><span class="wf-step">Investor Profile</span><i class="wf-arrow">→</i><span class="wf-step">Strategy & Live Data</span><i class="wf-arrow">→</i><span class="wf-step">Monte Carlo + Compliance</span><i class="wf-arrow">→</i><span class="wf-step">Explanation & Rebalancing</span></div>
+            <a class="repo-button" href="https://github.com/pavan-kalyan-pk-2646/capital_compass_ai.git" target="_blank" rel="noopener"><span class="repo-icon">GH</span><span><small>OPEN SOURCE</small>View GitHub Repository</span><b>↗</b></a>
           </div>
         </article>
-
       </div>
     </div>
   </section>
@@ -2427,7 +2404,7 @@ nav ul a{ font-size: 15px !important; }
           <div class="skill-list">
             <span class="skill-item"><i class="skill-symbol rest-symbol">⚡</i><b>Data Structures</b><small>Algorithms</small></span>
             <span class="skill-item"><i class="skill-symbol rest-symbol">◧</i><b>Object-Oriented Programming</b><small>Design</small></span>
-            <span class="skill-item"><i class="skill-symbol rest-symbol">▤</i><b>Data Base and Management Systems</b><small>Databases</small></span>
+            <span class="skill-item"><i class="skill-symbol rest-symbol">▤</i><b>DBMS</b><small>Databases</small></span>
             <span class="skill-item"><i class="skill-symbol rest-symbol">⎔</i><b>Operating Systems</b><small>Systems</small></span>
             <span class="skill-item"><i class="skill-symbol rest-symbol">◈</i><b> Computer Networks</b><small>CN</small></span>
           </div>
@@ -2562,8 +2539,8 @@ nav ul a{ font-size: 15px !important; }
   <section id="resume">
     <div class="wrap">
       <div class="resume-panel reveal">
-        <div><span class="section-kicker">Recruiter ready</span><h3>Want the complete profile?</h3><p>Download my latest resume for a concise view of my education, projects, technical skills and certifications.</p></div>
-        <div class="resume-actions"><a href="pk_resume.pdf" download="Burra_Venkata_Pavan_Kalyan_Resume.pdf" class="btn btn-primary magnetic resume-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 19h16"/></svg>Download Resume</a><a href="mailto:venkatapavankalyanb@gmail.com" class="btn btn-ghost magnetic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Contact Me</a></div>
+        <div><span class="section-kicker">Recruiter ready</span><h3>Want the complete profile?</h3><p>Download my latest resume for the same education, projects, technical skills, coding achievements and certifications presented across this portfolio.</p></div>
+        <div class="resume-actions"><a href="bvpavankalyan_resume.pdf" download="Burra_Venkata_Pavan_Kalyan_Resume.pdf" class="btn btn-primary magnetic resume-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 19h16"/></svg>Download Resume</a><a href="mailto:venkatapavankalyanb@gmail.com" class="btn btn-ghost magnetic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Contact Me</a></div>
       </div>
     </div>
   </section>
@@ -2580,7 +2557,7 @@ nav ul a{ font-size: 15px !important; }
         <a class="btn btn-ghost magnetic" href="https://github.com/pavan-kalyan-pk-2646" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
         <a class="btn btn-ghost magnetic" href="tel:+916300874602"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+91 6300874602</a>
       </div>
-      <div class="contact-card reveal"><div><span class="availability">Available for opportunities</span><strong>Let's build something useful.</strong><span>Software Engineering · Full-Stack · AI/ML · ServiceNow</span></div><a href="pk_resume.pdf" download="Burra_Venkata_Pavan_Kalyan_Resume.pdf" class="btn btn-primary magnetic resume-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 19h16"/></svg>Resume</a></div>
+      <div class="contact-card reveal"><div><span class="availability">Available for opportunities</span><strong>Let's build something useful.</strong><span>Software Engineering · Full-Stack · AI/ML · ServiceNow</span></div><a href="bvpavankalyan_resume.pdf" download="Burra_Venkata_Pavan_Kalyan_Resume.pdf" class="btn btn-primary magnetic resume-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 19h16"/></svg>Resume</a></div>
     </div>
   </section>
 </main>
@@ -2621,21 +2598,28 @@ nav ul a{ font-size: 15px !important; }
 
   /* ---------- kinetic name ---------- */
   const nameEl = document.getElementById('kineticName');
-  const fullName = "BURRA VENKATA PAVAN KALYAN";
-  const words = fullName.split(' ');
+  const nameLines = [
+    ['BURRA', 'VENKATA'],
+    ['PAVAN', 'KALYAN']
+  ];
   let globalIndex = 0;
-  words.forEach((word, wi) => {
-    const wordDiv = document.createElement('div');
-    wordDiv.className = 'word';
-    [...word].forEach((ch) => {
-      const span = document.createElement('span');
-      span.className = 'letter' + (wi === words.length - 1 ? ' accent' : '');
-      span.textContent = ch;
-      span.style.setProperty('--d', (globalIndex * 0.04) + 's');
-      globalIndex++;
-      wordDiv.appendChild(span);
+  nameLines.forEach((lineWords, li) => {
+    const lineDiv = document.createElement('div');
+    lineDiv.className = 'name-line';
+    lineWords.forEach((word) => {
+      const wordDiv = document.createElement('div');
+      wordDiv.className = 'word';
+      [...word].forEach((ch) => {
+        const span = document.createElement('span');
+        span.className = 'letter' + (li === 1 ? ' accent' : '');
+        span.textContent = ch;
+        span.style.setProperty('--d', (globalIndex * 0.04) + 's');
+        globalIndex++;
+        wordDiv.appendChild(span);
+      });
+      lineDiv.appendChild(wordDiv);
     });
-    nameEl.appendChild(wordDiv);
+    nameEl.appendChild(lineDiv);
   });
 
   /* ---------- rotating role line ---------- */
