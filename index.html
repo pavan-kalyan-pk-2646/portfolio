@@ -2108,6 +2108,161 @@ nav ul a{ font-size: 15px !important; }
 /* Contact card resume pill */
 .contact-card .btn-primary{ box-shadow: 0 1px 0 rgba(255,255,255,.55) inset, 0 16px 34px -14px rgba(145,230,200,.4) !important; }
 </style>
+
+<style id="final-photo-fix">
+.hero-grid{
+  grid-template-columns:minmax(0,1fr) minmax(430px,0.9fr);
+  gap:56px;
+  align-items:center;
+}
+.hero-photo{
+  width:100%;
+  max-width:520px;
+  min-width:430px;
+  justify-self:end;
+}
+.photo-wrap{
+  width:100%;
+}
+.photo-stage{
+  width:100%;
+  padding:14px;
+  border-radius:14px;
+  overflow:hidden;
+}
+.photo-frame{
+  width:100%;
+  border-radius:10px;
+  overflow:hidden;
+}
+.photo-frame img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:4 / 5;
+  object-fit:cover;
+  object-position:center;
+  min-height:0;
+}
+.photo-caption{
+  display:flex;
+  justify-content:flex-start;
+  gap:22px;
+  padding-left:8px;
+  margin-top:16px;
+  white-space:nowrap;
+}
+.photo-caption span{
+  white-space:nowrap;
+}
+.photo-caption span:first-child{
+  min-width:82px;
+}
+@media (max-width:1100px){
+  .hero-grid{
+    grid-template-columns:minmax(0,1fr) minmax(360px,0.8fr);
+    gap:36px;
+  }
+  .hero-photo{
+    min-width:360px;
+    max-width:440px;
+  }
+}
+@media (max-width:900px){
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+  .hero-photo{
+    order:-1;
+    width:100%;
+    min-width:0;
+    max-width:420px;
+    justify-self:center;
+    margin:0 auto 10px;
+  }
+}
+@media (max-width:520px){
+  .hero-photo{max-width:340px;}
+  .photo-stage{padding:10px;}
+  .photo-caption{
+    gap:14px;
+    font-size:10px;
+  }
+}
+</style>
+
+
+<style id="final-serious-hero-fix">
+/* Final hero balance: text and portrait occupy separate columns with no overlap. */
+.hero-grid{
+  grid-template-columns:minmax(0,1.12fr) minmax(360px,0.62fr);
+  gap:72px;
+  align-items:center;
+}
+.kinetic-name{
+  font-size:clamp(2.1rem,5.2vw,5.05rem);
+}
+.hero-photo{
+  width:100%;
+  min-width:0;
+  max-width:410px;
+  justify-self:end;
+}
+.photo-stage{
+  padding:12px;
+}
+.photo-frame img{
+  width:100%;
+  aspect-ratio:4/5;
+  object-fit:cover;
+  object-position:center;
+}
+.photo-caption{
+  margin-top:14px;
+  padding-left:4px;
+  gap:18px;
+}
+@media (max-width:1200px){
+  .hero-grid{
+    grid-template-columns:minmax(0,1fr) minmax(320px,0.58fr);
+    gap:48px;
+  }
+  .hero-photo{max-width:360px;}
+  .kinetic-name{font-size:clamp(2.1rem,5.1vw,4.5rem);}
+}
+@media (max-width:900px){
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+  .hero-photo{
+    order:-1;
+    width:100%;
+    max-width:360px;
+    margin:0 auto;
+    justify-self:center;
+  }
+  .kinetic-name{
+    font-size:clamp(2.25rem,11vw,4rem);
+  }
+}
+</style>
+
+
+<style id="photo-right-final">
+.hero-photo {
+    position: relative;
+    left: 42px;
+}
+
+@media (max-width: 900px) {
+    .hero-photo {
+        left: 0;
+    }
+}
+</style>
+
 </head>
 <body>
 
@@ -2188,11 +2343,10 @@ nav ul a{ font-size: 15px !important; }
                 <div class="vignette"></div>
                 <span class="corner tl"></span><span class="corner tr"></span>
                 <span class="corner bl"></span><span class="corner br"></span>
-                <div class="frame-label">Lead Role</div>
               </div>
             </div>
           </div>
-          <div class="photo-caption"><span>On location</span><span>Hyderabad, IN</span></div>
+          <div class="photo-caption"><span>Based in</span><span>Hyderabad, India</span></div>
         </div>
       </div>
     </div>
@@ -2323,10 +2477,10 @@ nav ul a{ font-size: 15px !important; }
             <div class="project-heading"><div><span class="project-index">02 / AI PLATFORM</span><h3>Climate Mirror</h3><p>Agentic AI Climate Intelligence Platform</p></div><span class="project-state"><i></i> Built</span></div>
             <p class="project-summary">Agentic climate intelligence platform that analyses personal and national climate inputs and generates risk scores, action plans, disaster assessments, policy recommendations, personalised narratives, and trend projections.</p>
             <div class="project-details">
-              <div><span>FRONTEND / UI</span><b>HTML · CSS · JavaScript · Jinja2</b></div>
+              <div><span>FRONTEND</span><b>HTML · CSS · JavaScript · Jinja2</b></div>
               <div><span>BACKEND</span><b>Python · Flask</b></div>
-              <div><span>AI / ARCHITECTURE</span><b>Multi-Agent Python · Climate Analytics · Linear Regression</b></div>
-              <div><span>DATABASE / SECURITY</span><b>SQLAlchemy · SQLite · CSRF · Input Validation</b></div>
+              <div><span>AI / ARCHITECTURE</span><b>Custom Multi-Agent Python · Climate Analytics</b></div>
+              <div><span>DATABASE / SECURITY</span><b>SQLAlchemy · SQLite · CSRF Validation</b></div>
             </div>
             <div class="project-tech">
               <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/python" alt="" loading="lazy"></i>Python</span>
@@ -2347,11 +2501,10 @@ nav ul a{ font-size: 15px !important; }
             <div class="project-heading"><div><span class="project-index">03 / AI FINANCE</span><h3>Capital Compass AI</h3><p>Multi-Agent Financial Advisory System</p></div><span class="project-state"><i></i> Built</span></div>
             <p class="project-summary">Multi-agent financial portfolio system that combines LangGraph, LangChain and Ollama for portfolio recommendations, risk analysis, Monte Carlo stress testing, RAG-based compliance validation, and plain-language explanations.</p>
             <div class="project-details">
-              <div><span>FRONTEND / UI</span><b>HTML · CSS · JavaScript</b></div>
-              <div><span>BACKEND / API</span><b>Python · Flask · REST API · SSE</b></div>
-              <div><span>AI / AGENTS</span><b>LangGraph · LangChain · Ollama · RAG · ChromaDB</b></div>
+              <div><span>FRONTEND</span><b>HTML · CSS · JavaScript</b></div>
+              <div><span>BACKEND</span><b>Python · Flask · REST API</b></div>
+              <div><span>AI / AGENTS</span><b>LangGraph · LangChain · Ollama · RAG</b></div>
               <div><span>DATA / FINANCE</span><b>NumPy · Pandas · yfinance · Monte Carlo</b></div>
-              <div><span>STORAGE / AUTOMATION</span><b>SQLite · APScheduler</b></div>
             </div>
             <div class="project-tech">
               <span class="tech-chip"><i class="tech-logo"><img src="https://cdn.simpleicons.org/python" alt="" loading="lazy"></i>Python</span>
